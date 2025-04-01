@@ -1,5 +1,3 @@
-# Skills
-
 ## Network administation
 
 **Cisco:** 2 years of network administration in the army.
