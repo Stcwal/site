@@ -8,7 +8,7 @@ import Vertical from "./components/verticalLine";
 
 export default function Page() {
   return (
-    <div className="text-center">
+    <div className="items-center">
       <NavigationHeader />
       <div>
         <Education />

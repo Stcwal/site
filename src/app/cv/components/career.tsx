@@ -6,7 +6,9 @@ const cvContent = getMarkdownContent("src/app/cv/mdfiles/career.md");
 export default function Career() {
   return (
     <div className="max-w-3xl mx-auto px-4">
-      <h1 className="text-2xl font-bold mt-6 mb-4">Career</h1>
+      <h1 className="text-2xl font-bold mt-6 mb-4 text-center">Career</h1>
+      <hr className="border-t border-neutral-500 w-full" />
+
       <Suspense fallback={<div>Loading...</div>}>
         <Markdown content={cvContent} className="text-left"></Markdown>
       </Suspense>
