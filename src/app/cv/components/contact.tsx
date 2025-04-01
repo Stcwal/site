@@ -1,8 +1,15 @@
-export default function Contact() {
+import Markdown, { getMarkdownContent } from "@/components/markdown";
+import { Suspense } from "react";
+
+const cvContent = getMarkdownContent("src/app/cv/mdfiles/contact.md");
+
+export default function Education() {
   return (
-    <div>
-      <strong>Contact</strong>
-      <p></p>
+    <div className="max-w-3xl mx-auto px-4">
+      <h1 className="text-2xl font-bold mt-6 mb-4">Contact</h1>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Markdown content={cvContent} className="text-left"></Markdown>
+      </Suspense>
     </div>
   );
 }
