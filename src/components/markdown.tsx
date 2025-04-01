@@ -26,13 +26,13 @@ export default function Markdown({ content, className = "" }: MarkdownProps) {
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ node, ...props }) => (
-            <h1 className="text-3xl font-bold mt-6 mb-4" {...props} />
+            <h1 className="text-2xl font-bold mt-6 mb-4" {...props} />
           ),
           h2: ({ node, ...props }) => (
-            <h2 className="text-2xl font-bold mt-5 mb-3" {...props} />
+            <h2 className="text-xl font-bold mt-5 mb-3" {...props} />
           ),
           h3: ({ node, ...props }) => (
-            <h3 className="text-xl font-bold mt-4 mb-2" {...props} />
+            <h3 className="text-l font-bold mt-4 mb-2" {...props} />
           ),
           p: ({ node, ...props }) => <p className="mb-4" {...props} />,
           ul: ({ node, ...props }) => (
@@ -44,6 +44,9 @@ export default function Markdown({ content, className = "" }: MarkdownProps) {
           li: ({ node, ...props }) => <li className="mb-1" {...props} />,
           a: ({ node, ...props }) => (
             <a className="text-blue-500 hover:underline" {...props} />
+          ),
+          strong: ({ node, ...props }) => (
+            <strong className="font-bold" {...props} />
           ),
           blockquote: ({ node, ...props }) => (
             <blockquote
