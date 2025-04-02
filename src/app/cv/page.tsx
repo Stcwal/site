@@ -1,10 +1,10 @@
 import NavigationHeader from "@/components/header";
 import Career from "./components/career";
 import Education from "./components/education";
-import Expreience from "./components/experience";
-import Contact from "./components/contact";
+import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Vertical from "./components/verticalLine";
+import InfoFooter from "@/components/footer";
 
 export default function Page() {
   return (
@@ -16,13 +16,13 @@ export default function Page() {
         <Career />
         <Vertical />
 
-        <Expreience />
+        <Experience />
         <Vertical />
 
         <Skills />
-        <Vertical />
-
-        <Contact />
+      </div>
+      <div className="pt-64">
+        <InfoFooter />
       </div>
     </div>
   );

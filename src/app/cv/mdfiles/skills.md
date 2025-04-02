@@ -13,3 +13,9 @@
 **TypeScript:** 1 year of TypeScript experience.
 
 **Python:** 1 year of Python programming.
+
+## Universal skills
+
+**Git:** Projects in both GitHub and GitLab, as well as github actions.
+
+**Handgrenade instructor:** Because you never know
