@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function InfoFooter() {
   return (
-    <div className="bg-gray-50 pb-2">
-      <hr className="border-t border-neutral-300 w-full" />
+    <div className="bg-secondary pb-2">
+      <hr className="border-t border-neutral-500 w-full" />
 
       <div className="p-4">
         <p className="font-bold text-center ">Contact information</p>

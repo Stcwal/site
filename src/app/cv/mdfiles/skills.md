@@ -1,21 +1,21 @@
 ## Network administation
 
-**Cisco:** 2 years of network administration in the army.
+**Windows server:** 2 years experience with windows server administration in the army.
 
-**Linux:** 1 year of linux server administration as part of TIHLDE Drift.
+**Cisco:** 2 years experience with network administration in the army.
 
-**Windows server:** 2 years of windows server administration in the army.
+**Linux:** 1 year experience with linux server administration as part of TIHLDE Drift.
+
+**Openstack:** 1 year experience with openstack solutions as part of TIHLDE Drift.
 
 ## Programming languages
 
-**Java:** 1 year of java programming.
+**Java:** In classes at univeristy, with focus on object oriented programming and useability.
 
-**TypeScript:** 1 year of TypeScript experience.
+**TypeScript:** Web-design for the TIHLDE organisation.
 
-**Python:** 1 year of Python programming.
+**Python:** Math-spesific modeling and programming in univeristy.
 
 ## Universal skills
 
 **Git:** Projects in both GitHub and GitLab, as well as github actions.
-
-**Handgrenade instructor:** Because you never know

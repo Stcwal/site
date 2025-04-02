@@ -10,11 +10,11 @@ Basic military skills, customer relations, communication equipment
 
 #### **jan 2022 - jul 2022:** _Signal batalion - Platoon techncian_
 
-Leadership skills, cooperation skills; technical mediation and communcation
+Leadership skills, cooperation skills; technical mediation and communication
 
 #### **aug 2022 - feb 2024:** _Signal batalion - Command post systems techncian_
 
-Network, security and infrastructure; communication operations and maintainance
+Network, security and infrastructure; communication operations and maintenance
 
 #### **jan 2024 - aug 2024:** _eFP Lithuania - systems operator_
 
