@@ -4,7 +4,7 @@ import { ThemeToggle } from "./theme-toggle";
 
 export default function NavigationHeader() {
   return (
-    <div className="bg-primary backdrop-blur-2xl fixed top-0 left-0 right-0 z-50">
+    <div className="backdrop-blur fixed top-0 left-0 right-0 z-50">
       <div className="p-4">
         <div className="flex justify-between items-center w-full">
           <div className="flex space-x-4 items-center">
