@@ -9,7 +9,6 @@ import InfoFooter from "@/components/footer";
 export default function Page() {
   return (
     <div className="items-center">
-      <NavigationHeader />
       <div>
         <Education />
         <Vertical />
@@ -21,9 +20,7 @@ export default function Page() {
 
         <Skills />
       </div>
-      <div className="pt-64">
-        <InfoFooter />
-      </div>
+      <div className="pt-64"></div>
     </div>
   );
 }

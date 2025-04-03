@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import NavigationHeader from "@/components/header";
+import InfoFooter from "@/components/footer";
 
 const geistSans = Inter({
   variable: "--font-sans",
@@ -24,7 +26,9 @@ export default function RootLayout({
         className={`${geistSans.variable} antialiased bg-white dark:bg-gray-900 text-black dark:text-gray-50`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <NavigationHeader />
+          <main className="pt-20">{children}</main>
+          <InfoFooter />
         </ThemeProvider>
       </body>
     </html>

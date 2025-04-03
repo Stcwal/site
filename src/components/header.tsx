@@ -4,10 +4,10 @@ import { ThemeToggle } from "./theme-toggle";
 
 export default function NavigationHeader() {
   return (
-    <div className="bg-secondary">
-      <div className="pt-4 pl-4 pr-4">
-        <div className="w-full flex justify-between pb-4">
-          <div className="flex space-x-4 pt-2">
+    <div className="bg-primary backdrop-blur-2xl fixed top-0 left-0 right-0 z-50">
+      <div className="p-4">
+        <div className="flex justify-between items-center w-full">
+          <div className="flex space-x-4 items-center">
             <Link href={`/`}>
               <strong className="">WALMANN.PARTY</strong>
             </Link>
@@ -22,7 +22,7 @@ export default function NavigationHeader() {
           <ThemeToggle />
         </div>
       </div>
-      <hr className="border-t border-neutral-500 w-full" />
+      <hr className="border-t border-neutral-500 w-full mt-2" />
     </div>
   );
 }
