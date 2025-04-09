@@ -17,8 +17,25 @@ export default function NaobParser({ htmlString }: { htmlString: string }) {
 
   return (
     <div>
-      {/* You can render the parsed data here */}
-      <pre>{JSON.stringify(parsed, null, 2)}</pre>
+      <h1 className="text-2xl font-bold mb-4">Parsed NAOB Data</h1>
+      <div className="flex">
+        <p className="text-lg font-semibold">{parsed.word}</p>
+        <p className="pl-2 pr-2 text-lg"> |</p>
+        <p className="text-lg ">{parsed.wordClass}</p>
+      </div>
+      <div className="flex">
+        <p className="text-m font-semibold pr-2">Uttale:</p>
+
+        <p className="text-m">{parsed.pronunciation}</p>
+      </div>
+      <div className="flex">
+        <p className="text-m font-semibold pr-2">Etymologi:</p>
+        <p className="text-m">{parsed.etymology}</p>
+      </div>
+      <div className="flex">
+        <p className="text-m font-semibold pr-2">Definisjon:</p>
+        <p className="text-m">{parsed.definitions[0]}</p>
+      </div>
     </div>
   );
 }

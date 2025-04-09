@@ -9,15 +9,12 @@ const htmlContent = await GetOne("eklatant");
 export default function WordScrape() {
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Markdown
-          content={content}
-          className="text-left items-center justify-center mx-auto w-1/2"
-        ></Markdown>
-      </Suspense>
+      <Markdown
+        content={content}
+        className="text-left items-center justify-center mx-auto w-1/2"
+      ></Markdown>
       <div>
         <div className="w-1/2 h-[50vh] mx-auto mb-4 items-center justify-center">
-          <p className="text-black">Kansje en video ellerno?</p>
           <HtmlToText />
         </div>
       </div>
