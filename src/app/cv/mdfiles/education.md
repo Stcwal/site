@@ -2,7 +2,7 @@
 
 ### Rud Videregående Skole
 
-#### **aug 2017 - jun 2020:** _Computer and data electonics installation_
+#### **aug 2017 - jun 2020:** _Computer and data electronics installation_
 
 An education focusing mostly on the physical part of computer and communication systems
 

@@ -8,11 +8,11 @@ Basic military skills, customer relations, communication equipment
 
 ### Employment
 
-#### **jan 2022 - jul 2022:** _Signal batalion - Platoon techncian_
+#### **jan 2022 - jul 2022:** _Signal batalion - Platoon technician_
 
 Leadership skills, cooperation skills; technical mediation and communication
 
-#### **aug 2022 - feb 2024:** _Signal batalion - Command post systems techncian_
+#### **aug 2022 - feb 2024:** _Signal batalion - Command post systems technician_
 
 Network, security and infrastructure; communication operations and maintenance
 
@@ -30,7 +30,7 @@ TypeScript based website development
 
 #### **sep 2024 - mar 2025:** _Drift - Network operations specialist_
 
-Linux network, server and infrastructure; maintainance and development
+Linux network, server and infrastructure; maintenance and development
 
 #### **apr 2025 - present:** _Drift - Leader_
 

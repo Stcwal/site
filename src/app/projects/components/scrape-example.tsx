@@ -26,7 +26,7 @@ function HtmlToText() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">HTML to Text Preview</h1>
-      <div className="text-left">
+      <div className="text-left pb-2">
         <NaobParser htmlString={htmlContent} />
       </div>
     </div>

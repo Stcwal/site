@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/globe.svg" />
+      </head>
       <body
         className={`${geistSans.variable} antialiased bg-white dark:bg-gray-900 text-black dark:text-gray-50`}
       >

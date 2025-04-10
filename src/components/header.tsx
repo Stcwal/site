@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
+import LinkedIn from "./linkedin";
 
 export default function NavigationHeader() {
   return (
@@ -19,7 +20,10 @@ export default function NavigationHeader() {
               <div className="border-neutral-500 hover:underline">Projects</div>
             </Link>
           </div>
-          <ThemeToggle />
+          <div className="flex space-x-4 items-center">
+            <LinkedIn />
+            <ThemeToggle />
+          </div>
         </div>
       </div>
       <hr className="border-t border-neutral-500 w-full mt-2" />
