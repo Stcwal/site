@@ -20,4 +20,6 @@
 
 **Git:** Projects in both GitHub and GitLab, as well as GitHub Actions.
 
+**React:** Full-stack projects.
+
 **Figma:** UI development.
