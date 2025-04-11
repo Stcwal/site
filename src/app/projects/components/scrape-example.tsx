@@ -15,6 +15,9 @@ export default function WordScrape() {
       ></Markdown>
       <div>
         <div className="w-1/2 h-[50vh] mx-auto mb-4 items-center justify-center">
+          <h1 className="text-2xl font-bold mt-6 mb-4 text-center">
+            NAOB fetcher
+          </h1>
           <HtmlToText />
         </div>
       </div>
@@ -25,7 +28,6 @@ export default function WordScrape() {
 function HtmlToText() {
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">HTML to Text Preview</h1>
       <div className="text-left pb-2">
         <NaobParser htmlString={htmlContent} />
       </div>

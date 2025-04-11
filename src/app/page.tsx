@@ -6,7 +6,7 @@ import InfoFooter from "@/components/footer";
 export default function Home() {
   return (
     <div>
-      <div className="flex-1 p-4 w-full flex flex-col items-center justify-center min-h-[calc(100vh-2*64px)]">
+      <div className="flex-1 p-4 w-full flex flex-col items-center justify-center">
         <ScrollArea className="w-full max-w-3xl">
           <div className="text-center">
             <h1 className="font-sans text-2xl mb-2">Welcome!</h1>

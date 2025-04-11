@@ -10,6 +10,8 @@
 
 ## Programming languages
 
+**C#:** In classes at school, with focus on object oriented programming.
+
 **Java:** In classes at university, with focus on object oriented programming and usability.
 
 **TypeScript:** Web-design for the TIHLDE organisation.

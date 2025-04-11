@@ -21,16 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="h-full">
       <head>
         <link rel="icon" href="/globe.svg" />
       </head>
       <body
-        className={`${geistSans.variable} antialiased bg-white dark:bg-gray-900 text-black dark:text-gray-50`}
+        className={`${geistSans.variable} flex flex-col min-h-screen antialiased bg-white dark:bg-gray-900 text-black dark:text-gray-50`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavigationHeader />
-          <main className="pt-20">{children}</main>
+          <main className="pt-20 flex-grow">{children}</main>
           <InfoFooter />
         </ThemeProvider>
       </body>

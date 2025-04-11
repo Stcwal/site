@@ -4,21 +4,21 @@
 
 #### **jan 2021 - dec 2022:** _Signal batalion - Command post technical assistant_
 
-Basic military skills, customer relations, communication equipment
+Basic military skills; customer service; communication equipment.
 
 ### Employment
 
 #### **jan 2022 - jul 2022:** _Signal batalion - Platoon technician_
 
-Leadership skills, cooperation skills; technical mediation and communication
+Leadership skills, cooperation skills; technical mediation and communication.
 
 #### **aug 2022 - feb 2024:** _Signal batalion - Command post systems technician_
 
-Network, security and infrastructure; communication operations and maintenance
+Network, security and infrastructure; communication operations and maintenance.
 
 #### **jan 2024 - aug 2024:** _eFP Lithuania - systems operator_
 
-International cooperation, foreign communication equipment
+International cooperation; foreign communication equipment.
 
 ## TIHLDE Student Organization
 
@@ -26,12 +26,12 @@ International cooperation, foreign communication equipment
 
 #### **sep 2024 - present:** _Index - Full stack developer_
 
-TypeScript based website development
+TypeScript based website development.
 
 #### **sep 2024 - mar 2025:** _Drift - Network operations specialist_
 
-Linux network, server and infrastructure; maintenance and development
+Linux network, server and infrastructure; maintenance and development.
 
 #### **apr 2025 - present:** _Drift - Leader_
 
-Project management
+Project management and leadership.

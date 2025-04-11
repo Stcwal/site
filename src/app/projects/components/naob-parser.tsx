@@ -17,7 +17,6 @@ export default function NaobParser({ htmlString }: { htmlString: string }) {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">Parsed NAOB Data</h1>
       <div className="flex">
         <p className="text-lg font-semibold">{parsed.word}</p>
         <p className="pl-2 pr-2 text-lg"> |</p>

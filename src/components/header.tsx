@@ -19,6 +19,9 @@ export default function NavigationHeader() {
             <Link href={`/projects`} passHref>
               <div className="border-neutral-500 hover:underline">Projects</div>
             </Link>
+            {/* <Link href={`/contact`} passHref>
+              <div className="border-neutral-500 hover:underline">Contact</div>
+            </Link> */}
           </div>
           <div className="flex space-x-4 items-center">
             <LinkedIn />

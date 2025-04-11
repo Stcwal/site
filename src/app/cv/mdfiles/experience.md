@@ -12,4 +12,4 @@ During my time as a student I have been volunteering as a developer for the TIHL
 
 ### TIHLDE drift
 
-I also volunteered as a network and server administrator for TIHLDE. During my time in TIHLDE drift I was managing the OpenStack server systems NTNU uses. Here I gained valuable experience hosting and managing various server projects.
+I also volunteered as a network and server administrator for TIHLDE. During my time in TIHLDE drift I was managing the OpenStack server systems NTNU uses. Here I gained valuable experience hosting and managing various server projects. During my time in TIHLDE drit I have taken on leadership responibilities.
