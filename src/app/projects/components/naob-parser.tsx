@@ -3,6 +3,7 @@ interface ParsedNaobData {
   wordClass: string;
   pronunciation: string;
   etymology: string;
+  definition?: string;
 }
 
 export default function NaobParser({ htmlString }: { htmlString: string }) {
@@ -15,24 +16,33 @@ export default function NaobParser({ htmlString }: { htmlString: string }) {
         <p className="pl-2 pr-2 text-lg"> |</p>
         <p className="text-lg ">{parsed.wordClass}</p>
       </div>
+      {parsed.pronunciation && (
+        <div className="flex">
+          <p className="text-m font-semibold pr-2">Uttale:</p>
+          <p className="text-m">{parsed.pronunciation}</p>
+        </div>
+      )}
+      {parsed.etymology && (
+        <div className="flex">
+          <p className="text-m font-semibold pr-2">Etymologi:</p>
+          <p className="text-m">{parsed.etymology}</p>
+        </div>
+      )}
       <div className="flex">
-        <p className="text-m font-semibold pr-2">Uttale:</p>
-        <p className="text-m">{parsed.pronunciation}</p>
-      </div>
-      <div className="flex">
-        <p className="text-m font-semibold pr-2">Etymologi:</p>
-        <p className="text-m">{parsed.etymology}</p>
+        <p className="text-m font-semibold pr-2">Beskrivelse:</p>
+        <p className="text-m">{parsed.definition}</p>
       </div>
     </div>
   );
 }
 
 function parseNaobHtml(htmlString: string): ParsedNaobData {
+  const html = htmlString.split(`<article`)[1]?.split(`</article>`)[0] || "";
+
   const word =
-    htmlString.split(`<span class="oppslagsord">`)[1]?.split(`</span>`)[0] ||
-    "";
+    html.split(`<span class="oppslagsord">`)[1]?.split(`</span>`)[0] || "";
   const wordClass =
-    htmlString
+    html
       .split(
         `<div class="ordklasseledd inline-eske">
                         <span>`
@@ -40,7 +50,7 @@ function parseNaobHtml(htmlString: string): ParsedNaobData {
       ?.split(`</span>`)[0] || "";
 
   let rawPronunciation =
-    htmlString
+    html
       .split(`<span class="overskrift">UTTALE</span><span>`)[1]
       ?.split(`</span>`)[0] || "";
 
@@ -49,7 +59,7 @@ function parseNaobHtml(htmlString: string): ParsedNaobData {
 
   // Extract etymology content
   let rawEtymology =
-    htmlString
+    html
       .split(`<span class="overskrift">ETYMOLOGI</span>`)[1]
       ?.split(`</div>`)[0] || "";
 
@@ -62,11 +72,20 @@ function parseNaobHtml(htmlString: string): ParsedNaobData {
   // Now format the HTML entities
   const etymology = formatToString(rawEtymology);
 
+  let rawDefinition =
+    html
+      .split(`<div class="betydning">`)[1]
+      ?.split(`<div class="sitatseksjon">`)[0] || "";
+
+  rawDefinition = rawDefinition.replace(/<[^>]*>/g, " ").trim();
+  const definition = formatToString(rawDefinition);
+
   return {
     word,
     wordClass,
     pronunciation,
     etymology,
+    definition,
   };
 }
 

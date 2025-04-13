@@ -10,7 +10,7 @@ export default function NavigationHeader() {
         <div className="flex justify-between items-center w-full">
           <div className="flex space-x-4 items-center">
             <Link href={`/`}>
-              <strong className="">WALMANN.PARTY</strong>
+              <strong className="">STIAN WALMANN</strong>
             </Link>
             <div>|</div>
             <Link href={`/cv`} passHref>
