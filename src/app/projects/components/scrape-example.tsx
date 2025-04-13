@@ -4,11 +4,9 @@ import { GetOne } from "@/app/api/proxy/naob";
 import NaobParser from "./naob-parser";
 import NaobField from "./naob-input";
 
-const content = getMarkdownContent("src/app/projects/mdfiles/wordscrape.md");
-
-// This helps with caching and prevents unnecessary rerenders
 export const dynamic = "force-dynamic";
-export const revalidate = 0;
+
+const content = getMarkdownContent("src/app/projects/mdfiles/wordscrape.md");
 
 export default async function WordScrape({
   queryParams = {},
