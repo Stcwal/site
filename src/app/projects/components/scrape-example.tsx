@@ -13,10 +13,16 @@ export const revalidate = 0;
 export default async function WordScrape({
   searchParams = {},
 }: {
-  searchParams?: { word?: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  // Get the word from URL params or use default with a null check
-  const wordToFetch = searchParams?.word || "eksempel";
+  // Handle the case where word might be a string or string[]
+  const wordParam = searchParams?.word;
+  const wordToFetch =
+    typeof wordParam === "string"
+      ? wordParam
+      : Array.isArray(wordParam)
+      ? wordParam[0]
+      : "eksempel";
 
   const data = await GetOne(wordToFetch);
   const dataString = String(data);
