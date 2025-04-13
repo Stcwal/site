@@ -28,9 +28,6 @@ export default function NaobParser({ htmlString }: { htmlString: string }) {
 }
 
 function parseNaobHtml(htmlString: string): ParsedNaobData {
-  // Add console.log to debug the input
-  console.log("HTML String received:", htmlString?.substring(0, 100));
-
   const word =
     htmlString.split(`<span class="oppslagsord">`)[1]?.split(`</span>`)[0] ||
     "";
@@ -65,10 +62,6 @@ function parseNaobHtml(htmlString: string): ParsedNaobData {
   // Now format the HTML entities
   const etymology = formatToString(rawEtymology);
 
-  // Debug output
-  console.log("Parsed values:", { word, wordClass, pronunciation, etymology });
-
-  // Return the parsed data object
   return {
     word,
     wordClass,
