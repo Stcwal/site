@@ -13,7 +13,6 @@ export async function GetOne(params: string): Promise<string> {
     }
 
     const html = await response.text();
-    console.log("Fetched data successfully");
     return html;
   } catch (error) {
     console.error("Error fetching data:", error);

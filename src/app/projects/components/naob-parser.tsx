@@ -7,8 +7,22 @@ interface ParsedNaobData {
 }
 
 export default function NaobParser({ htmlString }: { htmlString: string }) {
-  const parsed = parseNaobHtml(htmlString);
-
+  let parsed: ParsedNaobData = {
+    word: "",
+    wordClass: "",
+    pronunciation: "",
+    etymology: "",
+    definition: "",
+  };
+  try {
+    if (!htmlString) {
+      throw new Error("No HTML string provided.");
+    }
+    parsed = parseNaobHtml(htmlString);
+  } catch (error) {
+    console.error("Error parsing HTML string:", error);
+    return <div>Error parsing data</div>;
+  }
   return (
     <div>
       <div className="flex">
