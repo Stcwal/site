@@ -11,12 +11,12 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export default async function WordScrape({
-  searchParams = {},
+  queryParams = {},
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  queryParams?: { [key: string]: string | string[] | undefined };
 }) {
   // Handle the case where word might be a string or string[]
-  const wordParam = searchParams?.word;
+  const wordParam = queryParams?.word;
   const wordToFetch =
     typeof wordParam === "string"
       ? wordParam
