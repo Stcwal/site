@@ -1,7 +1,4 @@
-import Image from "next/image";
-import NavigationHeader from "../components/header";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import InfoFooter from "@/components/footer";
 
 export default function Home() {
   return (
