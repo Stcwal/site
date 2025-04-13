@@ -1,9 +1,12 @@
-import { GET } from "./route";
-
 export async function GetOne(params: string): Promise<string> {
   try {
     const request = `https://www.naob.no/ordbok/${params}`;
-    const response = await fetch(request);
+    const response = await fetch(request, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+      },
+    });
 
     if (!response.ok) {
       throw new Error("Failed to fetch data from the server.");
@@ -16,24 +19,4 @@ export async function GetOne(params: string): Promise<string> {
     console.error("Error fetching data:", error);
     throw error;
   }
-}
-
-export function ExtractHtmlContent(
-  htmlString: string,
-  selector: string
-): string | null {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(htmlString, "text/html");
-
-  const elements = doc.querySelectorAll(selector);
-
-  if (elements.length === 0) {
-    return null;
-  }
-
-  const extractedHtml = Array.from(elements)
-    .map((el) => el.outerHTML)
-    .join("");
-
-  return extractedHtml;
 }

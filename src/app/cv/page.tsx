@@ -8,19 +8,16 @@ import InfoFooter from "@/components/footer";
 
 export default function Page() {
   return (
-    <div className="items-center">
+    <div className="items-center pb-20">
       <div>
         <Education />
         <Vertical />
         <Career />
         <Vertical />
-
         <Experience />
         <Vertical />
-
         <Skills />
       </div>
-      <div className="pt-64"></div>
     </div>
   );
 }
