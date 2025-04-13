@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export default function ProjectsPage({
   searchParams = {},
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }) {
   return <WordScrape searchParams={searchParams} />;
 }
