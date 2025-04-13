@@ -13,8 +13,11 @@ export default async function WordScrape({
 }: {
   queryParams?: { [key: string]: string | string[] | undefined };
 }) {
-  // Handle the case where word might be a string or string[]
-  const wordParam = queryParams?.word;
+  // Await the queryParams if it's a Promise
+  const resolvedParams = await Promise.resolve(queryParams);
+
+  // Now use the resolved params
+  const wordParam = resolvedParams?.word;
   const wordToFetch =
     typeof wordParam === "string"
       ? wordParam
